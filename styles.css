@@ -1,0 +1,361 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2E2E2;
+    padding-top: 100px;
+}
+
+h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #285FBA;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    width: 75%;
+    letter-spacing: 0.7px;
+    margin-top: 30px;
+}
+button {
+    display: block;
+    width: fit-content;
+    height: 40px;
+    margin-top: 60px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #387FF7;
+    border-radius: 30px;
+    padding: 0 35px;
+}
+.iframe {
+    width: 90%;
+    height: 300px;
+    margin: 50px auto 50px auto;
+}
+
+
+/* ===========  HEADER  =========== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #285FBA;
+    font-family: system-ui, -apple-s    ystem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header a {
+    border-bottom: 5px solid transparent;
+}
+.header a:hover {
+    border-bottom: 5px solid #5588dc;
+}
+.grid-header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    width: 500px;
+    margin: auto;
+    line-height: 65px;
+}
+.grid-header a {
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+}
+.promoBanner {
+    background-color: #222222;
+    color: white;
+    width: 100vw;
+    height: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.promoBanner p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline;
+}
+.promoBanner .icon {
+    margin: 0 5px;
+}
+.promoBanner #privacyPolicy {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 2px solid #387FF7;
+}
+
+.btnSignUp {
+    position: absolute;
+    top: 45px;
+    right: 100px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    border: none !important;
+    background-color: #1d4586 !important;
+}
+
+
+/* =========== FOOTETR =========== */
+
+.footer {
+    width: 100vw;
+    color: white;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 30px 30px 30px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 20px;
+}
+
+.footer .icon {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* ===========  HOME PAGE  =========== */
+
+.grid-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 150px;
+}
+#introduction {
+    height: calc(100vh - 100px);
+    color: white;
+    background-color: #222222;
+}
+#for-providers {
+    padding: 0;
+    background-color: #222222;
+}
+#for-providers #left {
+    background-image: url('media/section3.png');
+    height: 600px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+#for-providers #right {
+    padding: 75px;  
+    color: white;
+    text-align: right;
+}
+#for-providers p{
+    width: 100%;
+}
+@media screen and (max-width:1024px) {
+    h2, h3, p, button{
+        margin: 40px auto;
+        width: 90%;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .iframe {
+        width: 100%;
+        margin: auto;
+    }
+    .grid-2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 40px;
+    }
+    #introduction {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        text-align: left;
+    }
+
+    #for-providers #right {
+        width: 100%;
+        padding: 40px;
+    }
+    #for-providers h2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width:780px) {
+    h2, h3, p, button{
+        text-align: center;
+        margin: 40px auto;
+        width: 90%;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .iframe {
+        width: 100%;
+        margin: auto;
+    }
+    .grid-2 {
+        width: 100%;
+        display: block;
+        padding: 40px;
+        text-align: center;
+    }
+    #introduction {
+        display: flex;
+        align-items: center;
+    }
+    #for-providers #left {
+        display: none;
+    }   
+    #for-providers #right {
+        width: 100%;
+        padding: 40px;
+    }
+    #for-providers h2 {
+        width: 100%;
+    }
+}
+
+
+/* =========== SIGN UP / SIGN IN =========== */
+
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 50px auto;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+}
+
+
+
+input[type="text"],  
+input[type="email"], 
+input[type="password"] {
+    margin: 20px 0 30px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #387FF7;
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+    padding:15px 0 15px 0;
+    outline: none;
+}
+input[type="submit"] {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin-top: 60px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #387FF7;
+    border-radius: 30px;
+}
+.fieldTitle {
+    color: #285FBA;
+    font-weight: 500;
+    font-size: 15px;
+}
+.legend {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.checkbox {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline;
+    margin-right: 15px;
+    color: gray;
+}   
+
+
+
+/* ===========  ABOUT PAGE =========== */
+
+
+#header-text {
+    color: white;
+    background-color: #222222;
+    text-align: right;
+    height: 90vh;
+}
+#header-text p {
+    margin-left: auto;
+}
+
+#national-expert {
+    align-items: unset;
+    gap: 30px;
+}
+#national-expert p,  #national-expert h2 {
+    width: 90% !important;
+}
+#national-expert h2 {
+    font-size: 35px;
+}
+
+
+#data-driven {
+    text-align: right;
+    background-color: #222222;
+    color: white;
+}
+#data-driven p {
+    margin-left: auto;
+}
+#data-drive .iframe {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+#contact-us img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 600px;
+}
