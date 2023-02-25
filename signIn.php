@@ -18,7 +18,7 @@
                 <a href="signUp.php"> Not registred? Sign Up. </a>
             </div>
             <div id="right">
-                <form action="#">
+                <form action="#" class="form-login">
                     <p class="fieldTitle"> EMAIL ADDRESS </p>
                     <input id="txt_email" type="email" name="email" placeholder="client.mailaddress@example.com" required>
                     
@@ -45,7 +45,10 @@ function checkCredentials($email, $pass){
     $registros = mysqli_query($conexion, "SELECT * FROM users") or die("Problemas en el select:" . mysqli_error($conexion));
     while ($reg = mysqli_fetch_array($registros)) {
        if($email == $reg['email'] && $pass ==  $reg['password']){
-        echo '<script type="text/javascript">','window.location.replace("feed.php");','</script>';
+        session_start();
+        $_SESSION['user'] = $reg['email'];
+        // echo '<script type="text/javascript">','window.location.replace("feed.php");','</script>';
+        header('Location: feed.php');
        }
     }
 }

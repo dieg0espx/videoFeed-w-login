@@ -40,7 +40,7 @@
             <p> Exceptional care is no longer just about astute medical acumen, research insights and bedside manner. As CMM increasingly focuses on Value-Based Care, your up-to-date understanding of this holistic payment model is essential to maintaining positive patient outcomes. From front-running industry trends and regulatory findings, to high value insights from over two decades of personal experience, Dr. Tom Davis's Daily BC NewsFeed helps you keep up with the latest in shared-risk trends quickly. </p>
         </div>
     </div>
-
+    <?php include "formSignUp.php" ?>
     <?php include "footer.html" ?>
 </body>
 </html>
